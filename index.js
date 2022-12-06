@@ -1,5 +1,7 @@
-salario_liq = 7500.00;
+const prompt = require('prompt-sync')();
 
-salario_bru = (salario_liq/100)*90;
+salario_liq = prompt('Salário líquido: R$');
+salario_liq = parseInt(salario_liq);
+salario_bru = salario_liq * 0.9;
 
-console.log("Salário líquido: R$", salario_liq, "\nSalário bruto: R$", salario_bru);
+console.log('Salário bruto R$', salario_bru);
